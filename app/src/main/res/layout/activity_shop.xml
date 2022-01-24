@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityShop">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewShopWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ShopWelcome"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxFries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:checked="false"
+                android:onClick="FriesEnable"
+                android:text="@string/Fries" />
+
+            <EditText
+                android:id="@+id/editTextFries"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxHamburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="BurgerEnable"
+                android:text="@string/Hamburger" />
+
+            <EditText
+                android:id="@+id/editTextHamburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxCheeseburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="CheeseEnable"
+                android:text="@string/Cheeseburger" />
+
+            <EditText
+                android:id="@+id/editTextCheeseburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxShakeChoco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="ChocoEnable"
+                android:text="@string/ShakeChoc" />
+
+            <EditText
+                android:id="@+id/editTextShakeChoco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxVaniShake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="VaniEnable"
+                android:text="@string/ShakeVan" />
+
+            <EditText
+                android:id="@+id/editTextShakeVan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="CoffeeEnable"
+                android:text="@string/coffee" />
+
+            <EditText
+                android:id="@+id/editTextCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxCoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:width="0dp"
+                android:onClick="CokeEnable"
+                android:text="@string/coffee" />
+
+            <EditText
+                android:id="@+id/editTextCoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:width="0dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:width="0dp"
+                android:text="@string/Sum"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textViewSum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:width="0dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCheckSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkSumButton"
+            android:text="@string/checkSumButton" />
+
+        <Button
+            android:id="@+id/buttonCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="callCheckout"
+            android:text="@string/checkout" />
+
+        <Button
+            android:id="@+id/buttonToMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="callMain"
+            android:text="@string/returntoMain" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

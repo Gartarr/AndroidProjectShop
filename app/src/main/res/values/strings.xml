@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ApkaProjekt</string>
+    <string name="author">About author</string>
+    <string name="shop">Shop</string>
+    <string name="cart">Cart</string>
+    <string name="checkout">To checkout</string>
+    <string name="mainActivityText">Welcome to Shopping App! You can shop by clicking \"Shop\" button below.</string>
+    <string name="authorName">Made by:</string>
+    <string name="authorNameRight">Marcin Mroczkowski</string>
+    <string name="authorSchool">Catholic University of Lublin</string>
+    <string name="authorID">149272</string>
+    <string name="returntoMain">Return to Main Menu</string>
+    <string name="ShopWelcome">Welcome to the Shop! Select items you want to buy below along with their amount.</string>
+    <string name="Fries">Fries, 4 zł</string>
+    <string name="Hamburger">Hamburger, 7 zł</string>
+    <string name="Cheeseburger">Cheeseburger, 6 zł</string>
+    <string name="ShakeVan">Vanilla Shake, 8 zł</string>
+    <string name="ShakeChoc">Chocolate Shake, 8 zł</string>
+    <string name="coffee">Coffee, 6 zł</string>
+    <string name="dietcoke">Diet coke, 5 zł</string>
+    <string name="Sum">Total:</string>
+    <string name="checkSumButton">Check Sum of order</string>
+    <string name="friesPom">Fries:</string>
+    <string name="hamPom">Hamburger:</string>
+    <string name="cheesePom">Cheeseburger:</string>
+    <string name="chocoPom">Chocolate Shake:</string>
+    <string name="vaniPom">Vanilla Shake:</string>
+    <string name="coffeePom">Coffee:</string>
+    <string name="cokePom">Diet coke:</string>
+    <string name="emptyCart">The Order is empty!</string>
+    <string name="orderComplete">Your order:</string>
+</resources>

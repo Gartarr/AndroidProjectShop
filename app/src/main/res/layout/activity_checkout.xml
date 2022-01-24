@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCheckout">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonShopReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="callToShop"
+            android:text="@string/shop" />
+
+        <Button
+            android:id="@+id/buttonReturnMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="callMain"
+            android:text="@string/returntoMain" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

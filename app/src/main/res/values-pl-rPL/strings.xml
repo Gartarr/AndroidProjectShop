@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ApkaProjekt</string>
+    <string name="author">O autorze</string>
+    <string name="shop">Sklep</string>
+    <string name="cart">Koszyk</string>
+    <string name="checkout">Do kasy</string>
+    <string name="mainActivityText">Witamy w aplikacji do robienia zakupów Online! Aby przeglądać dostępne produkty, proszę nacisnąć przycisk \"Sklep\" poniżej.</string>
+    <string name="authorName">Wykonał:</string>
+    <string name="authorNameRight">Marcin Mroczkowski</string>
+    <string name="authorID">149272</string>
+    <string name="authorSchool">Katolicki Uniwersytet Lubelski</string>
+    <string name="returntoMain">Powrót do głównego menu</string>
+    <string name="ShopWelcome">Witaj w sklepie! Wybierz przedmioty które chcesz zakupić wraz z ich ilością.</string>
+    <string name="Fries">Frytki, 4 zł</string>
+    <string name="Hamburger">Hamburger, 7 zł</string>
+    <string name="Cheeseburger">Cheeseburger, 6 zł</string>
+    <string name="ShakeVan">Shake Waniliowy, 8 zł</string>
+    <string name="ShakeChoc">Shake Czekoladowy, 8 zł</string>
+    <string name="coffee">Kawa, 6 zł</string>
+    <string name="dietcoke">Dietetyczna cola, 5 zł</string>
+    <string name="Sum">Suma:</string>
+    <string name="checkSumButton">Sprawdź sumę zamówienia</string>
+    <string name="friesPom">Frytki:</string>
+    <string name="hamPom">Hamburger:</string>
+    <string name="cheesePom">Cheeseburger:</string>
+    <string name="chocoPom">Shake Czekoladowy:</string>
+    <string name="vaniPom">Shake Waniliowy:</string>
+    <string name="coffeePom">Kawa:</string>
+    <string name="cokePom">Dietetyczna cola:</string>
+    <string name="emptyCart">Zamówienie jest puste!</string>
+    <string name="orderComplete">Twoje zamówienie:</string>
+</resources>
