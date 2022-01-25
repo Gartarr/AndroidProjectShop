@@ -1,5 +1,6 @@
 package com.example.apkaprojekt
 
+import android.app.Activity
 import android.content.Intent
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +26,9 @@ class ActivityShop : AppCompatActivity() {
     lateinit var cokeEdit: EditText
     lateinit var sumView: TextView
 
-
+    var sum = 0
+    var reqCode: Int = 2
+    var result: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +56,6 @@ class ActivityShop : AppCompatActivity() {
     }
 
     fun addToSum(view: View) : Int{
-        var sum = 0
         if (checkBoxFries.isChecked) {
             if(friesEdit.text.isNotEmpty()) sum+= friesEdit.text.toString().toInt() * 4}
         if (checkBoxHamburger.isChecked) {
@@ -200,10 +202,21 @@ class ActivityShop : AppCompatActivity() {
         }
         v1+= "\n" + addToSum(view).toString() + " zł"
         val runSecondIntent = Intent(this, ActivityCheckout::class.java)
-            runSecondIntent.putExtra("Order", v1)
-            startActivity(runSecondIntent)
-
+        runSecondIntent.putExtra("Order", v1)
+        startActivityForResult(runSecondIntent, reqCode)
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == reqCode) {
+            if (resultCode == RESULT_OK) {
+                if (data != null) {
+                    result = data.getStringExtra("RESULT").toString()
+                }
+            }
+        }
+    }
+
     fun callMain(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

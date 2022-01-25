@@ -1,5 +1,6 @@
 package com.example.apkaprojekt
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
@@ -25,6 +26,7 @@ class ActivityCheckout : AppCompatActivity() {
     private fun ReceiveValue() {
         val i = intent
         val order = intent.getStringExtra("Order")
+        i.putExtra("RESULT","Resulted text");
         textViewOrder.setText(order)
         //Toast.makeText(getApplicationContext(), name, Toast.LENGTH_SHORT).show();
     }
@@ -37,5 +39,6 @@ class ActivityCheckout : AppCompatActivity() {
     fun callToShop(view: View) {
         val intent = Intent(this, ActivityShop::class.java)
         startActivity(intent);
+        setResult(Activity.RESULT_OK, intent)
     }
 }
